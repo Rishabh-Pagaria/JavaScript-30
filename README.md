@@ -9,3 +9,7 @@ Things I learned
  ```javascript
  key.classList.add('playing');
  ```
+ * Removing the class
+```javascript
+e.target.classList.remove("playing");
+```
