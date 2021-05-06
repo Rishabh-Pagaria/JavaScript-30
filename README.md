@@ -13,3 +13,34 @@ Things I learned
 ```javascript
 e.target.classList.remove("playing");
 ```
+## Update_Variables Js
+Things I learned
+* Creating Variables using :root in CSS
+```css
+:root{
+    --variable_name: value;
+}
+```
+* setProperty method this basically takes 2 arguments (propertyName, value) and sets the property in the CSS
+```javascript
+document.documentElement.style.setProperty(`--${thi.name}`, thi.value+suffix);
+```
+* Used dataset property provides access to custom data attributes and returns a map so that you can access it. For e.g.
+```html
+<div class="controls">
+            <label for="spacing">Spacing</label>
+            <input type="range" name="spacing" min="10" max="200" value="100" data-sizing="px" data-name="Rishabh" data-lastname="Pagaria"><br>
+
+            <label for="blur">Blur</label>
+            <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px"><br>
+
+            <label for="base">Base Color</label>
+            <input type="color" name="base" value="#ff0077">
+        </div>
+```
+```javascript
+const inputs = document.querySelectorAll('.controls input');
+console.log(inputs[0].dataset)
+```
+![Console](./Image/2.jpg)
+
