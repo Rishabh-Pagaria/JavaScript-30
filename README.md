@@ -44,3 +44,15 @@ console.log(inputs[0].dataset)
 ```
 ![Console](./Image/2.jpg)
 
+## Array Cardio Day1
+Things I learned
+* map() -> Every element of the array is passed in this callback function and returns a new array with same length. 
+Example
+```javascript
+const ar = [1,2,3,4,5]
+const add_2 = ar.map(num => {
+    return num + 2;
+})
+console.log(add_2)
+```
+* filter() ->  
