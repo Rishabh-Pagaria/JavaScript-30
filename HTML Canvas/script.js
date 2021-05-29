@@ -32,7 +32,7 @@ const draw = (e)=>{
   // updating the values so that it doesn't always start from the begining 
   [lastX, lastY] = [e.offsetX, e.offsetY];
   hue += 1
-  if(hue >= 100){
+  if(hue >= 300){
     hue = 0;
   }
   if(ctx.lineWidth >= 50 || ctx.lineWidth <= 1){
